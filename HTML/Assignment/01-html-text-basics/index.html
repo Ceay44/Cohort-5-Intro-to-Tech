@@ -3,7 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jason's Web Page</title>
+    <title>Jason's Web Page</title> 
+    <style>
+    nav {
+        background-color: #efe5d0;
+        margin: 10px 10px 0px 10px;
+        
+     }
+     nav ul {
+        margin: 0px;
+        list-style-type: none;
+        padding: 5px 0px 5px 0px;
+        
+     }
+     nav ul li {
+        display: inline;
+        padding: 5px 10px 5px 10px;
+        
+     }
+     nav ul li a:link, nav ul li a:visited {
+        color: #954b4b;
+        border-bottom: none;
+        font-weight: bold;
+     }
+     nav ul li.selected {
+        background-color: #c8b99c;
+     }
+    
+
+    </style>
 </head>
 <body>
     <header>
@@ -12,18 +40,20 @@
     </header>
     <main>
         <nav>
-            <a href="">Home</a>
-            <a href="">About Me</a>
-            <a href="">Message Me</a>
-            <a href="">Directions</a>
-            <a href="">More Info</a>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li  class="selected"><a href="#About me">About Me</a></li>
+            <li><a href="#message me.html">Message Me</a>
+            <li><a href="directions.html">Directions</a></li>
+            <li><a href="more info.html">More Info</a></li>
+                    </ul>
         </nav>
         <title-section>
-            <img src="" alt="">
+            <img src="basic-text3/seesaw.jpg" alt="sesaw">
             <h2>About Me</h2>
         </title-section>
         <content-section>
-            <img src="" alt="">
+            <img src="basic-text3/seesaw.jpg" alt="seesaw">
             <h3>My Biography</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta labore ducimus quos dignissimos aspernatur dolorum veritatis non eaque dolore sequi sint laboriosam voluptatibus adipisci nulla possimus corporis magni esse quas minima, perspiciatis amet obcaecati iusto. Natus aspernatur enim officiis illo quia optio excepturi? Unde quis et quos impedit consequuntur cupiditate!</p>
         </content-section>
