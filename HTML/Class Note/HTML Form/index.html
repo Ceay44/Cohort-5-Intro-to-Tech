@@ -1,4 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+    <h1>Application Form</h1>
+    <form action="#" method="POST">
 
+        <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+    </div>
+
+        <br>
+
+    <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        
+    </div>
+
+    <br>
+
+<div>
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" name="companyName">
+</div>
+
+<br>
+
+<div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+    </div>
+<br>
+<div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+    </div>
+<br>
+    <div>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </div>
+
+
+    <br>
+
+    <div>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="USA">United States</option>
+            <option value="UK">United Kingdom</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <!-- Add more options as needed -->
+        </select><br><br>
+    </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
 
 
 
