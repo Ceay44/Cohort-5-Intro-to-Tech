@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Profile</title>
+  
+    <style>
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            font-family: Arial, sans-serif;
+        }
+        
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            gap:px;
+            align-items: center;
+            padding: 30px;
+            border-bottom: 1px solid #dbdbdb;
+            padding-top: 0px;
+        }
+        
+        .profile-pic {
+            width: 80px;
+            height: 80px;
+            margin-top: 20px;
+            align-self: flex-start 
+           
+            
+        }
+        
+        .profile-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .profile-info h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+        
+        .verified {
+            font-size: 18px;
+            color: #0095f6;
+        }
+        
+        .follow-btn {
+            padding: 5px 15px;
+            background-color: #0095f6;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .menu {
+            font-size: 28px;
+        }
+        
+        .profile-stats {
+            display: flex;
+            gap: 15px;
+            width: 100%;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .number {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .label {
+            font-size: 16px;
+            color: #8e8e8e;
+        }
+        
+        .profile-bio {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .bio-text {
+            display: block;
+            margin-top: 5px;
+        }
+        
+        .bio-link {
+            color: #003569;
+            text-decoration: none;
+        }
+        
+        .follows {
+            font-size: 14px;
+            color: #8e8e8e;
+            display: block;
+            margin-top: 5px;
+        }
+        
+        .follower {
+            font-weight: bold;
+            color: black;
+        }
+        
+        .profile-stories {
+            display: flex;
+            overflow-x: auto;
+            margin-top: 20px;
+            padding: 10px 0;
+            gap: 20px;
+           justify-content: center;
+        }
+        
+        .story {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80px;
+        }
+        
+        .story img {
+            width: 70px;
+            height: 70px;
+            border-radius: 35px;
+            border: 2px solid #c7c7c7;
+            object-fit: cover;
+        }
+        
+        .story-label {
+            text-align: center;
+            font-size: 12px;
+            color: #262626;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="assets/logo.png" alt="Instagram Logo" class="profile-pic">
+            <div class="profile-info">
+                <h1>instagram <span class="verified">&#10004;</span></h1>
+                <button class="follow-btn">Following</button>
+                <span class="menu">&#8942;</span>
+            </div>
+            <div class="profile-stats">
+                <div class="stat">
+                    <span class="number">5,863</span>
+                    <span class="label">posts</span>
+                </div>
+                <div class="stat">
+                    <span class="number">303m</span>
+                    <span class="label">followers</span>
+                </div>
+                <div class="stat">
+                    <span class="number">223</span>
+                    <span class="label">following</span>
+                </div>
+            </div>
+            <div class="profile-bio">
+                <span class="username">Instagram</span>
+                <span class="bio-text">Bringing you closer to the people and things you love. <span class="emoji">&#10084;</span></span>
+                <a href="https://help.instagram.com" class="bio-link">help.instagram.com</a>
+                <span class="follows">Followed by <span class="follower">thedailyshow</span> and <span class="follower">kevin</span></span>
+            </div>
+        </div>
+        <div class="profile-stories">
+            <div class="story">
+                <img src="https://via.placeholder.com/70" alt="Talent">
+                <span class="story-label">Talent</span>
+            </div>
+            <div class="story">
+                <img src="https://via.placeholder.com/70" alt="Travel">
+                <span class="story-label">Travel</span>
+            </div>
+            <div class="story">
+                <img src="https://via.placeholder.com/70" alt="Beauty">
+                <span class="story-label">Beauty</span>
+            </div>
+            <div class="story">
+                <img src="https://via.placeholder.com/70" alt="Fluff">
+                <span class="story-label">Fluff</span>
+            </div>
+            <div class="story">
+                <img src="https://via.placeholder.com/70" alt="ASMR">
+                <span class="story-label">ASMR</span>
+            </div>
+            <div class="story">
+                <img src="https://via.placeholder.com/70" alt="Sports">
+                <span class="story-label">Sports</span>
+            </div>
+            <div class="story">
+                <img src="https://via.placeholder.com/70" alt="Art">
+                <span class="story-label">Art</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

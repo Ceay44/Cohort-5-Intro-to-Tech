@@ -2,44 +2,114 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 #app {
-  font-size: 5em;
-  text-align: center;
+  display: grid;
+  grid-template-areas:
+      "header"
+      "middle"
+      "footer";
   height: 100vh;
+  text-align: center;
+  font-size: 1em;
 }
 
 #header {
+  grid-area: header;
   background-color: #f3ca40;
   height: 20vh;
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #middle {
+  grid-area: middle;
+  display: grid;
+  grid-template-areas:
+      "nav main";
+  grid-template-columns: 20% 80%;
   height: 60vh;
-  width: 100vw;
-}
-
-#main {
-  width: 80%;
 }
 
 #nav {
-  width: 20%;
+  grid-area: nav;
   background-color: #4b4e6d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+      "articles ads";
+  grid-template-columns: 75% 25%;
 }
 
 #articles {
-  width: 60vw;
+  grid-area: articles;
   background-color: #6a8d92;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #ads {
-  width: 20vw;
+  grid-area: ads;
   background-color: #f2a541;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #footer {
-  height: 20vh;
-  width: 100vw;
+  grid-area: footer;
   background-color: #f08a4b;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+  #middle {
+      grid-template-areas:
+          "nav"
+          "main";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 80%;
+  }
+
+  #main {
+      grid-template-areas:
+          "articles articles"
+          "ads";
+      grid-template-row: 100%;
+      grid-template-columns: 50% 50%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  #middle {
+      grid-template-areas:
+          "nav"
+          "main";
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 80%;
+  }
+
+  #main {
+      grid-template-areas:
+          "articles"
+          "ads";
+      grid-template-columns: 100%;
+      grid-template-rows: 75% 25%;
+  }
 }

@@ -26,6 +26,6 @@ We've screen-shotted just a ton of images for this one. Make sure before you try
 
 Again, getting exact margins is NOT our focus on this, only general layout using CSS Grid.
 
-I'd reccomend creating three (or so) grids. One for the header, one for the body content, and one for the footer.
+I'd recommend creating three (or so) grids. One for the header, one for the body content, and one for the footer.
 
 Good luck!

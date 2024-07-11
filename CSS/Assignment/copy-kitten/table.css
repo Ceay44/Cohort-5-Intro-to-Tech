@@ -1,0 +1,62 @@
+ #row1{
+    gap: 5px;
+row-gap: 5px;
+column-gap: 5px;
+
+}
+#row2{
+    gap: 5px;
+    column-gap: 5px;
+    
+}
+#row-3
+
+
+
+
+#cell-1 {
+  border-right: 1px solid black;
+  border-bottom: 1px;
+
+}
+
+#cell-2 {
+  border-right: 1px solid black;
+  border-bottom: 1px;
+  border-left: 1px solid black;
+  
+}
+#cell-3 {
+  border-left: 1px solid black;
+  border-bottom: 1px;
+}
+
+#cell-4 {
+  border-right: 1px solid black;
+  border-bottom: 1px;
+  border-top: 1px solid black;
+}
+#cell-5 {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px;
+  border-left: 1px solid black;
+}
+#cell-6 {
+  border-left: 1px solid black;
+  border-bottom: 1px;
+  border-top: 1px solid black;
+}
+#cell-7 {
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+}
+#cell-8 {
+  border-right: 1px solid black;
+  border-top: 1px;
+  border-left: 1px solid black;
+}
+#cell-9 {
+  border-left: 1px solid black;
+  border-bottom: 1px;
+}

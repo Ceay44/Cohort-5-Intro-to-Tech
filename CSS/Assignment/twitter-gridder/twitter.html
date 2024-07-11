@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX Twitter Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f8fa;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            max-width: 600px;
+            margin: auto;
+            height: 100vh;
+            justify-content: center;
+        }
+        
+        .header {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+        }
+        
+        .back-arrow {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+        
+        .profile-stats {
+            padding-left: 10px;
+        }
+        
+        .tweets-count {
+            font-size: 12px;
+            color: #657786;
+        }
+        
+        .profile-info {
+            display: grid;
+            grid-template-columns: 80px auto 80px;
+            grid-gap: 10px;
+            padding: 20px;
+            background-color: #fff;
+        }
+        
+        .logo {
+            border-radius: 50%;
+            grid-row: span 2;
+            width: 80px;
+            height: 80px;
+        }
+        
+        .info-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .follow-button {
+            height: 32px;
+            align-self: start;
+            background-color: #1da1f2;
+            color: white;
+            border: none;
+            padding: 5px 20px;
+            cursor: pointer;
+        }
+        
+        .followers {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #657786;
+        }
+        
+        .navigation {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background-color: #fff;
+            padding: 10px 0;
+            border-top: 1px solid #e1e8ed;
+            border-bottom: 1px solid #e1e8ed;
+        }
+        
+        .nav-button {
+            background: none;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #1da1f2;
+        }
+        
+        .tweets {
+            padding: 20px;
+            background-color: #fff;
+        }
+        
+        .tweets img {
+            width: 100%;
+        }
+        .tools{
+            display: flex;
+           
+            gap: 7em;
+            justify-content: center;
+            align-items:center;
+        }
+        .item > img{
+            width: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="back-arrow"><img src="assets/arrow.png" alt="arrow"></div>
+            <div class="profile-stats">
+                <h1>SpaceX</h1>
+                <span class="tweets-count">5,142 Tweets</span>
+                <div><img src="assets/header.png" alt=""></div>
+                
+            </div>
+        </header>
+        <div class="profile-info">
+            <img src="assets/avatar.jpg" alt="SpaceX Logo" class="logo">
+            <div class="info-text">
+                <h2>@SpaceX</h2>
+                <p>SpaceX designs, manufactures and launches the world’s most advanced rockets and spacecraft</p>
+                <div class="followers">
+                    <span>100 Following</span>
+                    <span>14.4M Followers</span>
+                </div>
+            </div>
+            <button class="follow-button">Follow</button>
+        </div>
+        <nav class="navigation">
+            <button class="nav-button">Tweets</button>
+            <button class="nav-button">Tweets & replies</button>
+            <button class="nav-button">Media</button>
+            <button class="nav-button">Likes</button>
+        </nav>
+        <div class="tweets">
+            <img src="assets/tweet.png" alt="Featured Tweet">
+            
+        </div>
+    </div>
+    <div class="tools">
+        <div class="item">
+            <img src="assets/home.png" alt="pic">
+        </div>
+        <div class="item">
+            <img src="assets/search.png" alt="pic">
+        </div>
+        <div class="item">
+            <img src="assets/bell.png" alt="pic">
+        </div>
+        <div class="item">
+            <img src="assets/dm.png" alt="pic">
+        </div>
+    </div>
+</body>
+</html>

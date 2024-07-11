@@ -5,4 +5,45 @@
   width: 80px;
   height: 80px;
   border: 2px solid orange;
+  text-align: center;
+  padding: 20px;
 }
+/*
+  /*Container uses CSS Grid layout*/
+  .container {
+    /* display: grid;
+    gap: 10px; Space between grid items */
+    display: grid;
+      grid-template-columns: repeat(20, 1fr);
+      gap: 10px; /* Optional: Adds space between the grid items */
+}
+
+
+    /* Media query for screens less than 600px wide */
+    @media (max-width: 599px) {
+      .container {
+          grid-template-columns: 1fr; /* 1 column */
+      }
+  }
+
+  /* Media query for screens between 600px and 800px wide */
+  @media (min-width: 600px) and (max-width: 799px) {
+      .container {
+          grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      }
+  }
+
+  /* Media query for screens between 800px and 1000px wide */
+  @media (min-width: 800px) and (max-width: 999px) {
+      .container {
+          grid-template-columns: repeat(10, 1fr); /* 10 columns */
+      }
+  }
+
+  /* Media query for screens greater than 1000px wide */
+  @media (min-width: 1000px) {
+      .container {
+          grid-template-columns: repeat(20, 1fr); /* 20 columns */
+      }
+  }
+  */*/
