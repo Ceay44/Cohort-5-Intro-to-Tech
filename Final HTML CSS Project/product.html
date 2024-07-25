@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            text-align: center;
+        }
+
+        body,
+        input,
+        button {
+            font-family: 'monospace', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        .nav-link {
+            font-family: 'monospace', serif;
+        }
+
+        header {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 50px;
+            background: #3b3b3b;
+            text-align: right;
+            z-index: 1;
+        }
+
+        #header-img {
+            max-width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0px;
+        }
+
+        #nav-bar a {
+            float: right;
+            display: block;
+            color: white;
+            transition-duration: 0.4s;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #nav-bar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #form {
+            margin-top: 55px;
+        }
+
+        #email {
+            height: 2em;
+            width: 15em;
+            border-radius: 1em;
+            padding-left: 0.6em;
+        }
+
+        #submit {
+            height: 3em;
+            width: 7em;
+            border-radius: 1em;
+            cursor: pointer;
+        }
+
+        #features-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #features {
+            width: 75%;
+            border-radius: 4em;
+        }
+
+        #features,
+        #working,
+        #offers {
+            margin-top: 0px;
+            padding: 55px;
+        }
+
+        .material-icons {
+            font-size: 5em;
+        }
+
+        #video-container {
+            overflow: hidden;
+            padding-top: 56.25%;
+            position: relative;
+        }
+
+        #video {
+            border: 0;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        #offers-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        #offers {
+
+            width: 85%;
+            border-radius: 4em;
+        }
+
+        .offer {
+
+            margin: 0.5em;
+            padding: 0.5em;
+            border-radius: 1em;
+        }
+
+        button {
+            height: 3em;
+            width: 6em;
+            border-radius: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            width: 100%;
+
+            padding: 0.3em;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: black;
+            margin-left: 0.5em;
+        }
+
+        footer p {
+            color: #606060;
+        }
+
+        @media (max-width: 600px) {
+            #nav-bar {
+                display: none;
+            }
+        }
+
+        @media (min-width: 700px) {
+            #video-container {
+                padding-top: initial;
+            }
+
+            #video {
+                position: static;
+                height: 315px;
+                width: 560px;
+            }
+        }
+
+        #nav-bar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <script src="Assets/CodeCampTester.js"></script>
+    <header id="header">
+        <img id="header-img" src="" alt="Logo">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#offers">Offers</a>
+            <a class="nav-link" href="#working">Working</a>
+            <a class="nav-link" href="#features">Features</a>
+        </nav>
+    </header>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <p>Let's get started. Remain updated about the latest tech from <span
+                style="font-family: 'monospace', serif;">E'MAGIN THAT</span> with our email feed subscription.</p>
+        <p><input id="email" type="email" name="email" placeholder="Enter your email" required=""></p>
+        <p><input id="submit" type="submit" value="Subscribe"></p>
+    </form>
+    <br>
+
+
+    <div id="features-container">
+        <div id="features">
+            <div>
+                <i class="material-icons">Secure</i>
+                <h2>PremiumDeals</h2>
+                <div>Our Anti-gravity technology is highly versitile in application.</div>
+            </div><br>
+            <div>
+                <i class="material-icons">Local & International</i>
+                <h2>Safest Shipping</h2>
+                <div>We make sure that the Tech will reach their destination in a safe and environment friendly way. We
+                    also provide insurance for any kind of damage and transportation losses.</div>
+            </div><br>
+            <div>
+                <i class="material-icons">Safe Shipping</i>
+                <h2>Quality Assurance</h2>
+                <div>For every purchase you make, we will ensure there are no damages or faults. We check and verify
+                    that there do not remain faults of any kind in any model of Anti-gravity Tech.</div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+
+
+    <div id="working">
+        <h1>Get an idea of how the Anti-gravity looks when in action.</h1>
+        <div id="video-container"><iframe id="video" src="Assets/imgs/Prom_Small.gif" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen=""></iframe></div>
+    </div>
+
+
+    <div id="offers-container">
+        <div id="offers">
+            <div class="offer">
+                <h2>Alert series</h2>
+                <i class="material-icons">Ground Series</i>
+                <div>$300 million</div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a lacus euismod, interdum.</div><br>
+                <button>Specs</button>
+            </div>
+            <div class="offer">
+                <h2>Full charge series</h2>
+                <i class="material-icons">Sea Series</i>
+                <div>$ 500 million</div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis est ut elit.</div>
+                <br>
+                <button>Specs</button>
+            </div>
+            <div class="offer">
+                <h2>Unknown series</h2>
+                <i class="material-icons">Air & Space Series</i>
+                <div>$ 800 million</div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra neque a turpis.</div><br>
+                <button>Specs</button>
+            </div>
+        </div>
+    </div><br>
+
+
+
+    <footer>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+        <p>&copy2021, ETE Anti-Gravity</p>
+    </footer>
+</body>
+</html>

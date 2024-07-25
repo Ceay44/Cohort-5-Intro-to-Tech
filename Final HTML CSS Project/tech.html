@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            background-color: #f1f1f1;
+        }
+
+        #main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            min-width: 280px;
+            max-width: 300px;
+        }
+
+        #navbar {
+            position: fixed;
+            min-width: 290px;
+            top: 0px;
+            left: 0px;
+            width: 300px;
+            height: 100%;
+            border-right: solid;
+            border-color: rgba(0, 22, 22, 0.4);
+        }
+
+        #navbar>h1 {
+            font-size: 1.6rem;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        #navbar ul {
+            padding: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+            height: 90%;
+            list-style: none;
+        }
+
+        #navbar ul li {
+            border: solid 1.3px #333;
+        }
+
+        #main-header #navbar ul li a {
+            display: block;
+            text-align: left;
+            padding: .8rem 1rem .8rem 2rem;
+            cursor: pointer;
+            color: #222;
+            text-decoration: none;
+        }
+
+
+        /* main section */
+        #main-doc {
+            position: absolute;
+            margin-left: 320px;
+            padding: 2rem 1rem;
+        }
+
+        #main-doc .main-section header {
+            font-size: 2rem;
+            padding: 1rem 0;
+        }
+
+        #main-doc .main-section .main-article {
+            padding-left: 1.5rem;
+            margin-bottom: .5rem;
+            color: #222;
+        }
+
+        #main-doc .main-section .main-article p {
+            margin-bottom: 1rem;
+        }
+
+        #main-doc .main-section .main-article ul {
+            margin: 1.3rem 0 0 1.2rem;
+        }
+
+        #main-doc .main-section .main-article ul li {
+            margin-bottom: 1rem;
+        }
+
+        #main-doc .main-section .main-article code {
+            display: block;
+            padding: 1.5rem;
+            text-align: left;
+            background-color: #ddd;
+            border-radius: 7px;
+            margin-bottom: 1rem;
+        }
+
+        #main-doc .main-section:last-child .main-article ul {
+            margin: .5rem 0 1.5rem 3rem;
+            padding: 0;
+        }
+
+        #creator {
+            text-align: left;
+            padding: 2rem 0 0;
+        }
+
+        /* mobile-devices */
+        @media (max-width: 600px) {
+            #main-header {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                margin: 0;
+                max-width: 95%;
+                max-height: 400px;
+            }
+
+            #navbar {
+                width: 100%;
+                margin: 0;
+            }
+
+            #main-doc {
+                position: relative;
+                margin-left: 0px;
+                padding: 2rem 1rem;
+                margin-top: 410px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <script src="Assets/CodeCampTester.js"></script>
+    <nav id="navbar">
+        <header>JS Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li>
+                <a class="nav-link" href="#Basic_Knowledge">Basic Knowledge</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#JavaScript">JavaScript</a>
+            </li>
+            <li><a class="nav-link" href="#Hi_FCC">Hi FCC</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li>
+                <a class="nav-link" href="#Naming_variables">Naming variables</a>
+            </li>
+            <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+            <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
+            <li><a class="nav-link" href="#Constants">Constants</a></li>
+            <li><a class="nav-link" href="#Data_types">Data types</a></li>
+            <li>
+                <a class="nav-link" href="#if...else_statement">if...else statement</a>
+            </li>
+            <li><a class="nav-link" href="#while_statement">While Statement</a></li>
+            <li>
+                <a class="nav-link" href="#Function_declarations">Function declarations</a>
+            </li>
+            <li><a class="nav-link" href="#CO">CO</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+                <ul>
+                    <li>
+                        ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas,
+                        voluptatibus cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in
+                        natus, vitae quo.
+                    </li>
+                    <li>
+                        ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas,
+                        voluptatibus cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in
+                        natus, vitae quo.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Basic_Knowledge">
+            <header>Basic Knowledge</header>
+            <article>
+                <p>This guide assumes you have the following basic background:</p>
+
+                <ul>
+                    <li>
+                        A general understanding of the Internet and the World Wide Web (WWW).
+                    </li>
+                    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                    <li>
+                        Some programming experience. If you are new to programming, try one of
+                        the tutorials linked on the main page about JavaScript.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="JavaScript">
+            <header>JavaScript</header>
+            <article>
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Hi_FCC">
+            <header>Hi FCC</header>
+            <article>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque reiciendis impedit deleniti architecto id cupiditate officiis, saepe rem excepturi natus exercitationem sunt commodi nisi, repudiandae laboriosam? Quis magnam assumenda nobis?:
+                <code>function greetMe(yourName) { alert("Hi " + yourName); }
+                    greetMe("FCC");
+                </code>
+
+                Choose the code in the CL and hit Ctrl+R to watch it print in your
+                DOM!
+            </article>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+            </p>
+            <p>
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+            </p>
+            <p>
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+            </p>
+        </section>
+        <section class="main-section" id="Naming_variables">
+            <header>Naming variables</header>
+            <article>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, enim nostrum! Vitae natus eos magnam soluta quae! Iste quae, commodi hic, debitis iusto porro vel fuga aperiam maiores explicabo vitae?:
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Variable_scope">
+            <header>Variable scope</header>
+            <article>
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+                <code>if (true) { var a = 5; } console.log(a); // 5</code>
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+
+                <code>if (true) { let b = 5; } console.log(b); // ReferenceError: b is not
+                    defined</code>
+            </article>
+        </section>
+        <section class="main-section" id="Global_variables">
+            <header>Global variables</header>
+            <article>
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Constants">
+            <header>Constants</header>
+            <article>
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+
+                <code>const PI = 3.14;</code>
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+
+                <code>// THIS WILL CAUSE AN ERROR function c() {}; const c = 5; // THIS WILL
+                    CAUSE AN ERROR ALSO function k() { const k = 5; var k; //statements
+                    }</code>
+                However, object attributes are not protected, so the following statement
+                is executed without problems.
+                <code>const MY_OBJ = {"key": "value"}; MY_OBJ.key = "otherValue";</code>
+            </article>
+        </section>
+        <section class="main-section" id="Data_types">
+            <header>Data types</header>
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, praesentium minus harum delectus mollitia beatae consequuntur. Omnis reiciendis expedita esse corporis sequi nesciunt pariatur voluptas, architecto quod dolores quasi unde?:</p>
+                <ul>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laboriosam similique consequatur facere soluta earum omnis voluptatibus hic. Id ipsa laboriosam, voluptas corporis eum voluptates libero repellat quaerat voluptatibus praesentium.:</p>
+                        <ul>
+                            <li>Boolean. true and false.</li>
+                            <li>
+                                null. A special keyword denoting a null value. Because JavaScript
+                                is case-sensitive, null is not the same as Null, NULL, or any
+                                other variant.
+                            </li>
+                            <li>undefined. A top-level property whose value is undefined.</li>
+                            <li>Number. 42 or 3.14159.</li>
+                            <li>String. "Howdy"</li>
+                            <li>
+                                Symbol (new in ECMAScript 2015). A data type whose instances are
+                                unique and immutable.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>and Object</li>
+                </ul>
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, error voluptate nam vero quidem inventore, distinctio, excepturi delectus tempora dolor itaque alias nobis laboriosam dolore nesciunt dicta natus voluptatum doloribus..
+            </article>
+        </section>
+        <section class="main-section" id="if...else_statement">
+            <header>if...else statement</header>
+            <article>
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+                <code>if (condition_1) { statement_1; } else if (condition_2) { statement_2;
+                    } else if (condition_n) { statement_n; } else { statement_last; }
+                </code>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi illo excepturi accusamus quis doloremque quibusdam corrupti quos nam voluptate eius eveniet ratione, consequuntur veritatis dolorem inventore dicta voluptates tempore qui?:
+
+                <code>if (condition) { statement_1_runs_if_condition_is_true;
+                    statement_2_runs_if_condition_is_true; } else {
+                    statement_3_runs_if_condition_is_false;
+                    statement_4_runs_if_condition_is_false; }</code>
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta sint nihil commodi necessitatibus beatae deleniti, fugit esse recusandae reprehenderit quis repudiandae corporis ex reiciendis culpa laboriosam nemo officia labore praesentium.
+                <code>if (x = y) { /* statements here */ }</code> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi maxime asperiores repellendus minima! Minima, voluptatem vero aliquid adipisci nesciunt, repellendus odio ducimus accusamus, voluptates eius debitis exercitationem! Fugiat, facere tenetur.
+
+                <code>if ((x = y)) { /* statements here */ }</code>
+            </article>
+        </section>
+        <section class="main-section" id="while_statement">
+            <header>while statement</header>
+            <article>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet assumenda labore ratione tempore suscipit iste incidunt nisi doloremque unde doloribus magnam voluptates optio dolor rem cumque, adipisci, veritatis delectus blanditiis.
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+
+                Example:
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus recusandae blanditiis quae exercitationem accusamus. Nihil expedita repellendus quis at, autem ratione dicta ipsum blanditiis nostrum commodi, et consequuntur debitis architecto.:</p>
+
+                <code>var v = 0; var w = 0; while (v &lt; 3) { v++; w += v; }</code>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae rem eum nostrum est perferendis quibusdam non, dicta, expedita nam, harum consectetur ea veniam molestias accusantium. Illum perferendis debitis obcaecati. Natus?
+                </p>
+
+                <ul>
+                    <li>After the first pass:v = 1 and w = 1</li>
+                    <li>After the second pass:v = 2 and w = 3</li>
+                    <li>After the third pass:v = 3 and w = 6</li>
+                </ul>
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Function_declarations">
+            <header>Function declarations</header>
+            <article>
+                ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+
+                <ul>
+                    <li>The name of the function.</li>
+                    <li>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor consequatur odio earum hic non et voluptas, consequuntur soluta sapiente ipsam quas repudiandae rem mollitia voluptates officia est similique cum qui!
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vel similique enim perspiciatis officiis, sapiente doloribus pariatur sequi maxime iusto non, impedit iure. Excepturi eveniet nisi illo iste harum quas.
+                    </li>
+                </ul>
+                <p>
+                    For example, the following code defines a Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis ducimus placeat reprehenderit est optio nisi ex ipsa quo iste doloribus perspiciatis quaerat odit, officia nam ad commodi, sit ullam esse.
+                </p>
+
+                <code>function square(number) { return number * number; }</code>
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+                <code>return number * number;</code>
+                <p>
+                    ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et animi quis quas, voluptatibus
+                    cupiditate! Ea nemo quis aliquam nisi est totam tenetur esse saepe praesentium in natus, vitae quo.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="CO">
+            <header>CO</header>
+            <article>
+                <ul>
+                    <li>
+                        
+                        <a href="#" target="_blank">ETE</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main> 
+</body>
+</html>

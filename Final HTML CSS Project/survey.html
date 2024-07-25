@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="Assets/CodeCampTester.js"></script>
+    <h1 id=title>Gamers Voice! Tell us your choice!</h1>
+    <p id="description">Please fill out survey!</p>
+   
+    <div id="main">
+        <form id="survey-form">
+        <div id="input-fields">
+            <label id="name-label"><b>Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+            <br>
+            <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+            <br>
+            <label id="number-label"><b>Age:</b></label>
+            <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="12+">
+         </div>
+         <div id="dropdown-div"><br>
+            <label id="dropdown-label"><strong>Game Genres you prefer: </strong></label><br>
+            <select id="dropdown" name="code-lang" class="form">
+                <option value="A">Action</option>
+                <option value="F">Fantasy</option>
+                <option value="FI">Fighting</option>
+                <option value="RPG">RPG</option>
+                <option value="S">Shooter</option>
+            </select>
+         </div>
+         <div id="button-area">
+             <br>
+            <label id="game-label"><b>Gaming status:</b></label><br>
+            <input type="radio" class="radio-inline" name="gender" value="full" checked> Full-time gamer.<br>
+            <input type="radio" class="radio-inline" name="gender" value="freelancer"> Part-time gamer.<br>
+            <input type="radio" class="radio-inline" name="gender" value="twitch"> Game streamer.(Twitch)<br>
+            <input type="radio" class="radio-inline" name="gender" value="pro"> I am a pro-gamer.
+          </div>
+          <div id="button-area"><br>
+            <label id="gs-label"><b>Gaming Systems: </b></label><br>
+            <input type="checkbox" name="os1" value="ps" checked> PS <br>
+            <input type="checkbox" name="xbox" value="xbox">XBOX<br>
+            <input type="checkbox" name="pc3" value="pc">PC<br>
+          </div>
+
+          <div id="dropdown"><br><br>
+            <label id="dropdown-label"><strong>Games you wanna be expert: </strong></label><br>
+            <select id="dropdown" name="game-mas" class="form"><br><br>
+                <option value="C">C.O.D</option>
+                <option value="A">Anthem</option>
+                <option value="D">DOTA</option>
+                <option value="M">MK</option>
+                <option value="SF">Street Fighter</option>
+                <option value="RL">Rocket league</option>
+                <option value="CS">Counter Strike</option>
+            </select>
+         </div>
+          <div id="button-area"><br><br>
+            <label id="os-label"><b>Latest technology experience:</b></label><br>
+            <input type="checkbox" name="tech1" value="pc"> PC <br>
+            <input type="checkbox" name="tech2" value="vr"> VR<br>
+            <input type="checkbox" name="tech3" value="S"> Switch<br>
+            <input type="checkbox" name="tech3" value="ps"> PS<br>
+            <input type="checkbox" name="tech3" value="X">XBOX<br>
+          </div>
+
+
+          <div id="ending"><br><br>
+            <label id="comments-label">Do you have any suggestion about this survey?</label><br>
+            <textarea style= height:120px;" class="form" placeholder="Please feel free to write a review..."></textarea><br><br>
+            <input id="submit" type="submit"  class="form">
+          </div>
+        </form>
+
+    </form>
+</body>
+</html>

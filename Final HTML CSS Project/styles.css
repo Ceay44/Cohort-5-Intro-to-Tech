@@ -1,0 +1,243 @@
+/* General Styles */
+body,
+html {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding-top: 1rem;
+}
+
+/* Header */
+header {
+  background: #334455;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+}
+
+nav ul li {
+  padding: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative; /* Needed for pseudo-element positioning */
+  padding: 0 10px; /* Space around links for better touch */
+  transition: color 0.3s;
+  display: inline-block; /* Needed to control width for pseudo-element */
+  margin: 0 10px;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Positioning the line slightly below the text */
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #1abc9c; /* Teal color for consistency with social links */
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  left: 0; /* Expand line from the center outward */
+}
+
+.header-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.subtitle {
+  text-align: center;
+  position: absolute;
+  right: 10px;
+  margin-top: -30px;
+  background: #fff;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  color: #333;
+}
+
+/* Section Styling */
+.section {
+  font-size: 18px;
+  background: #f8f8f8;
+  margin: 2rem 0;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center-align items vertically */
+}
+
+.section h2 {
+  color: #2c3e50;
+  border-right: 3px solid #2c3e50;
+  padding-right: 20px;
+}
+
+.section p {
+  text-align: justify;
+  max-width: 80%;
+  padding: 2em;
+}
+
+/* Work Section */
+.work {
+  flex-direction: row;
+  align-items: center;
+}
+
+.work .project-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 10px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  width: calc(50% - 20px); /* Adjust width for spacing */
+  margin: 10px;
+  background: #eef;
+  padding: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+/* Contact Section */
+.contact-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-me p,
+.social-links {
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  position: relative;
+  color: #2c3e50;
+  text-decoration: none;
+  padding: 0 10px; /* Space around links for better touch */
+  transition: color 0.3s;
+  display: inline-block; /* Needed to control width for pseudo-element */
+  margin: 0 10px;
+}
+
+.social-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Positioning the line slightly below the text */
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #1abc9c; /* Teal color for consistency with nav links */
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.social-links a:hover::after {
+  width: 100%;
+  left: 0; /* Expand line from the center outward */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}
+
+.logo {
+  width: 50px;
+  height: 50%;
+  border-radius: 50%;
+  padding: 1rem;
+  display: block; /* removes extra space below images */
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    padding: 10px;
+  }
+
+  .section {
+    flex-direction: column;
+  }
+
+  .work .project-container {
+    flex-direction: column;
+  }
+
+  .contact-me {
+    flex-direction: column;
+  }
+
+  .section h2 {
+    border-right: none; /* Remove border-right from section titles on mobile */
+  }
+}
+
+img {
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+}
