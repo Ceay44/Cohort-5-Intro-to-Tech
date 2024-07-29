@@ -45,8 +45,8 @@ nav ul li a {
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s;
-  overflow: hidden; /* Ensures no overflow during animation */
-  display: inline-block; /* Allows the control of width for pseudo-element */
+  overflow: hidden; 
+  display: inline-block;
 }
 
 ul li a::after {
@@ -56,13 +56,13 @@ ul li a::after {
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: #1abc9c; /* Adjust color to fit design */
+  background-color: #1abc9c; 
   transition: width 0.3s ease, left 0.3s ease;
 }
 
 nav ul li a:hover::after {
   width: 100%;
-  left: 0; /* Expand line from the center to full width */
+  left: 0; 
 }
 
 .header-banner img {
@@ -90,7 +90,7 @@ nav ul li a:hover::after {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: row;
-  align-items: center; /* Center-align items vertically */
+  align-items: center; 
 }
 
 .section h2 {
@@ -127,7 +127,7 @@ nav ul li a:hover::after {
 }
 
 .project {
-  width: calc(50% - 20px); /* Adjust width for spacing */
+  width: calc(50% - 20px); 
   margin: 10px;
 
   background: #eef;
@@ -163,26 +163,26 @@ nav ul li a:hover::after {
   position: relative;
   color: #2c3e50;
   text-decoration: none;
-  padding: 0 10px; /* Space around links for better touch */
+  padding: 0 10px; 
   transition: color 0.3s;
-  display: inline-block; /* Needed to control width for pseudo-element */
+  display: inline-block; 
   margin: 0 10px;
 }
 
 .social-links a::after {
   content: "";
   position: absolute;
-  bottom: -5px; /* Positioning the line slightly below the text */
+  bottom: -5px; 
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: #1abc9c; /* Teal color for consistency with nav links */
+  background-color: #1abc9c; 
   transition: width 0.3s ease, left 0.3s ease;
 }
 
 .social-links a:hover::after {
   width: 100%;
-  left: 0; /* Expand line from the center outward */
+  left: 0; 
 }
 
 /* Footer */
@@ -196,5 +196,5 @@ footer {
 img {
   max-width: 100%;
   height: auto;
-  display: block; /* removes extra space below images */
+  display: block; 
 }

@@ -1,7 +1,18 @@
 /******************
  * YOUR CODE BELOW *
  ******************/
+let myFirstName = "Kevin";
+let myLastName = "Banks";
+let myFavoriteCeleb = "Denzel";
+let mySentence = "Hello! " + myFirstName + " What are you doin today?"
+let myLuckyNum = 4547;
+let myAge = 46;
+let myHeight = 70;
+let myFavoriteYear = 2003;
 
+let mySum = 5 + 2317 + 36;
+let myProduct = (232*43 / 2) + 4;
+let myHeightAndAge = myAge + myHeight; 
 
 /*********************************************************************************************************************
 
