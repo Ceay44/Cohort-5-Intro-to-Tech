@@ -1,0 +1,18 @@
+///////////////////////////////////////////////Welcome To Booleans, Null, Undfined ///////////////////////////////
+///////////////////////////////////////////primitive data types/////////////////////////////
+
+//What is a boolean data type? 
+// a value that can be either true or false
+
+/////////////////////what are Truthy values?/////////////////////////////
+// a truthy value is a value that is considered true when encountered in a Boolean context
+
+///////////////////////what are falsy values?/////////////////////////// 
+// A falsy value is something which evaluates to FALSE, for instance when checking a variable.
+
+
+///////////////////////////Undefined ////////////////////////////////
+//undefined global property represents the primitive value undefined
+
+///////////////////////////Null//////////////////////////////////////
+// a special value that represents the intentional absence of any object value

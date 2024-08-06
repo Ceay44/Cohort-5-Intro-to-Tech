@@ -1,7 +1,38 @@
 /**********************************
  * YOUR CODE GOES HERE THIS TIME! *
  **********************************/
+let x = 3;
+let y = 10;
+let z = 4;
+let greeting = "hello";
+let firstName = "Billy";
+let callStatus = "ringing";
 
+
+// make num double
+function double(){
+ return x = x * 2;
+}
+
+function triple(){
+  return y = y * 3;
+}
+
+function square(){
+  return z = z**2;
+}
+
+function beNice(){
+  return greeting = greeting + " " + firstName;
+}
+
+function changeName(){
+  return firstName = 'Danger';
+}
+
+function hangUp(){
+  return callStatus = "call ended";
+}
 
 
 /*********************************************************************************************************************

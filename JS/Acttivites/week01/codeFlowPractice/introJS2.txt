@@ -14,8 +14,8 @@ b = b + a; // Line 6
 
 
 
-// 50 ... after line 5 executes?
+// 70 ... after line 5 executes?
 
 
 
-// 15... after line 6 executes?
+// 133... after line 6 executes?

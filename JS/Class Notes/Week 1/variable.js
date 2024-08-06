@@ -40,15 +40,29 @@
 
 
 // string
-// let myString = "Go"
+ let myString = "Go"
 // Boolean
-// let myBool = true === false
-// undefined 
+ let myBool = true;
+ let myBool2 = false;
+// undefined
+let myHoney; 
 // in a variable is assigned but has no value
-// null
-// absent vaule
 
+// absent vaule
+let myNully =  null;
 
 let myFirstName = "Divan"
 let myLastName = "Jones"
+let myMaritaStatus = "single";
+let myCountry = "USA";
+let myAge = 46;
 console.log(typeof myFirstName, myLastName);
+
+let myGOku;
+let myVegeta;
+let myGohan;
+let myBroly;
+
+//let myAge = 46;
+let yourAge = 45;
+console.log(myAges, yourAge)
